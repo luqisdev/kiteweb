@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kite Browser — Ultra-Lightweight, Aerodynamic Web Browser</title>
+  
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description" content="Kite is an ultra-fast, modern web browser engineered for gamers, power users, and low-resource environments. Featuring vertical tabs, split screen, hardware limiter, and built-in utility sidebar.">
+  <meta name="keywords" content="Kite Browser, KiteWeb, luqisdev, lightweight browser, gaming browser, split screen browser, vertical tabs, kite.luqis.live">
+  <meta name="author" content="luqisdev">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kite.luqis.live/">
+  <meta property="og:title" content="Kite Browser — Ultra-Lightweight & Aerodynamic">
+  <meta property="og:description" content="Engineered for gamers, power users, and low-resource environments with smart memory management.">
+  <meta property="og:image" content="https://kite.luqis.live/og-image.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated Background Grid -->
+  <div class="bg-grid"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">🪁</div>
+        <span>Kite</span>
+        <span class="domain-badge">kite.luqis.live</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#features">Özellikler</a></li>
+          <li><a href="#interactive-demo">Canlı Önizleme</a></li>
+          <li><a href="#mobile">Mobil Sürüm</a></li>
+          <li><a href="#performance">Performans</a></li>
+          <li><a href="#download">İndir</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/luqisdev/kitebrowser" target="_blank" rel="noopener" class="btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="#download" class="btn-nav">İndir 📥</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge-pill">
+        <span class="badge-dot"></span>
+        <span>Kite v1.0 • Ultra-Lightweight & Aerodynamic Architecture</span>
+      </div>
+
+      <h1 class="hero-title">
+        Oyuncular ve Güçlü Kullanıcılar İçin <span class="text-gradient">Işık Hızında</span> Web Tarayıcısı
+      </h1>
+
+      <p class="hero-description">
+        Düşük sistem kaynağı tüketen aerodinamik mimari, akıllı bellek yönetimi (Game Boost), dahili dikey sekmeler ve bölünmüş ekran özgürlüğü.
+      </p>
+
+      <div class="hero-cta">
+        <a href="https://github.com/luqisdev/kitebrowser/releases/latest" id="hero-download-win" class="btn-primary">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m0 1.05h9.75v9.451L0 20.551M10.8 1.95L24 0v11.55H10.8M10.8 12.6H24V24l-13.2-1.95"/></svg>
+          Windows İçin İndir (.exe)
+        </a>
+        <a href="https://github.com/luqisdev/kitebrowser/releases/download/mobile-latest/Kite.apk" id="hero-download-apk" class="btn-secondary">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.552 0 .9997.4482.9997.9993s-.4477.9997-.9997.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.552 0 .9997.4482.9997.9993s-.4477.9997-.9997.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1523-.5676.416.416 0 00-.5676.1523l-2.0223 3.503C15.5902 8.3614 13.854 8 12 8s-3.5902.3614-5.1366.9499L4.841 5.4469a.416.416 0 00-.5676-.1523.416.416 0 00-.1523.5676l1.9973 3.4592C2.688 11.0827.4273 14.1848.0605 17.848h23.879c-.3668-3.6632-2.6275-6.7653-6.058-8.5266"/></svg>
+          Android APK İndir
+        </a>
+      </div>
+
+      <p class="os-detected" id="detected-os-text">Tespit Edilen İşletim Sistemi: Otomatik Algılanıyor...</p>
+
+      <!-- Interactive Mockup Demo Window -->
+      <div class="mockup-wrapper" id="interactive-demo">
+        <div class="browser-mockup">
+          <div class="browser-topbar">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="address-bar">
+              <span style="color: var(--text-dim);">🔒 https://</span>
+              <span class="address-url" id="mockup-url">kite://settings</span>
+            </div>
+            <div class="address-icons">
+              <span title="Split Screen Mode" id="mockup-split-toggle" style="cursor:pointer; padding:2px 6px; border-radius:4px; background:rgba(255,255,255,0.05);">📐 Bölünmüş Ekran</span>
+              <span>⚡ Boost: Aktif</span>
+            </div>
+          </div>
+
+          <div class="browser-body">
+            <!-- Left Docked Vertical Tabbar -->
+            <aside class="vertical-tabbar">
+              <div class="v-tab-header">Dikey Sekmeler</div>
+              <div class="v-tab active" data-tab="tab-settings">
+                <span class="v-tab-icon">⚙️</span>
+                <span>In-Tab Settings</span>
+              </div>
+              <div class="v-tab" data-tab="tab-game">
+                <span class="v-tab-icon">⚡</span>
+                <span>Game Boost RAM</span>
+              </div>
+              <div class="v-tab" data-tab="tab-split">
+                <span class="v-tab-icon">📐</span>
+                <span>Split Screen</span>
+              </div>
+              <div class="v-tab" data-tab="tab-home">
+                <span class="v-tab-icon">🚀</span>
+                <span>Hızlı Başlangıç</span>
+              </div>
+            </aside>
+
+            <!-- Main Interactive Content View -->
+            <main class="browser-content">
+              <div class="split-view">
+                <div class="view-pane" id="pane-left">
+                  <div class="pane-card">
+                    <h3 class="pane-title text-gradient" id="pane-left-title">⚙️ Native In-Tab Settings</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;" id="pane-left-content">
+                      `kite://settings` yönlendirmesi ve anında arama motoru ile tarayıcı ayarlarınıza sekmelerinizden ayrılmadan saniyeler içinde erişin.
+                    </p>
+                  </div>
+                  <div class="pane-card">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                      <span style="font-weight:600; font-size:0.9rem;">Gizlilik Kalkanı & Adblock</span>
+                      <span style="font-size:0.75rem; color:var(--accent-emerald); background:rgba(0,245,160,0.1); padding:2px 8px; border-radius:10px;">Korumalı</span>
+                    </div>
+                    <ul style="list-style:none; font-size:0.85rem; color:var(--text-muted); display:flex; flex-direction:column; gap:6px;">
+                      <li>✔ WebRTC Leak Prevention (IP Sızıntı Koruması)</li>
+                      <li>✔ Canvas & WebGL Privacy Spoofer</li>
+                      <li>✔ Anlık Reklam ve İzleyici Engelleyici</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Right Pane for Split Screen Preview (Hidden by default) -->
+                <div class="view-pane" id="pane-right" style="display:none; background:#05070d; border-left:1px solid rgba(255,255,255,0.08);">
+                  <div class="pane-card">
+                    <h3 class="pane-title text-gradient-emerald">🌐 Sağ Bölünmüş Ekran Panele</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">
+                      Sol tarafta kodlama yaparken veya makale okurken, sağ tarafta rehber videoları veya canlı yayınları aynı anda takip edin.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Tool Drawer -->
+              <div class="tool-drawer" id="tool-drawer">
+                <h4 id="drawer-title" style="margin-bottom:12px; font-size:1rem;">Yan Panel Aracı</h4>
+                <div id="drawer-content"></div>
+              </div>
+            </main>
+
+            <!-- Right Utility Sidebar -->
+            <aside class="utility-sidebar">
+              <div class="sidebar-btn" data-tool="side-translate" title="Google Çeviri">🌐</div>
+              <div class="sidebar-btn" data-tool="side-calc" title="Hızlı Hesap Makinesi">🧮</div>
+              <div class="sidebar-btn" data-tool="side-notes" title="Hızlı Notlar">📝</div>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Performance Metrics Strip -->
+  <section class="stats-strip" id="performance">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number text-gradient">~65%</div>
+          <div class="stat-label">Daha Az RAM Tüketimi</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient-purple">&lt; 0.2sn</div>
+          <div class="stat-label">Başlatma Süresi</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient-emerald">0 Tracker</div>
+          <div class="stat-label">Veri Sızıntısı Risk Sıfır</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient">100%</div>
+          <div class="stat-label">Güçlü Kullanıcı Odaklı</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">NEDEN KITE?</div>
+        <h2 class="section-title">Yüksek Hız ve Akıllı Özellikler</h2>
+        <p class="section-subtitle">Kite, sıradan tarayıcıların yarattığı bellek yükünü ortadan kaldırarak maksimum verim sunar.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Hardware Limiter & Game Boost</h3>
+          <p class="feature-desc">
+            Arka plandaki sekmeleri otomatik uyku moduna alır, bellek (RAM) ve işlemci kullanımını sınırlandırarak oyunlarda maksimum FPS verir.
+          </p>
+          <span class="feature-badge">Akıllı Tab Sleeping</span>
+          <div class="widget-ram">
+            <div class="ram-bar-label">
+              <span>Bellek Kullanımı (RAM)</span>
+              <span id="ram-usage-text">256 MB RAM</span>
+            </div>
+            <div class="ram-bar-bg">
+              <div class="ram-bar-fill" id="ram-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon">📐</div>
+          <h3 class="feature-title">Dahili Bölünmüş Ekran (Split Screen)</h3>
+          <p class="feature-desc">
+            Ekstra pencere açmaya gerek kalmadan tek tıklamayla iki farklı web sitesini yan yana açın ve verimliliğinizi ikiye katlayın.
+          </p>
+          <span class="feature-badge">Çift Pencere Simülasyonu</span>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon">📑</div>
+          <h3 class="feature-title">Sol Dikey Sekme Barı (Vertical Tabs)</h3>
+          <p class="feature-desc">
+            Üst üste yığılan sekmeler yerine ekranınızın soluna şık bir şekilde sabitlenen dikey sekme düzeniyle rahatça gezinin.
+          </p>
+          <span class="feature-badge">Ergonomik Tasarım</span>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3 class="feature-title">Hızlı Yan Panel Araçları</h3>
+          <p class="feature-desc">
+            Entegre Google Çeviri, Hesap Makinesi ve Hızlı Not Alma araçlarına sekme değiştirmeden yan panelden erişin.
+          </p>
+          <span class="feature-badge">Translator • Calculator • Notes</span>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">Adblock & Privacy Shield</h3>
+          <p class="feature-desc">
+            WebRTC IP sızıntı önleme, Canvas ve WebGL parmak izi koruması (spoofer) ve dahili reklam engelleyici ile tam güvenlik.
+          </p>
+          <span class="feature-badge">Maksimum Gizlilik</span>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3 class="feature-title">Sekme İçi Ayarlar (In-Tab Settings)</h3>
+          <p class="feature-desc">
+            `kite://settings` mimarisi sayesinde anında arama ve akıllı yapılandırma menüsü elinizin altında.
+          </p>
+          <span class="feature-badge">kite:// Routing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Section -->
+  <section class="section" id="mobile" style="padding-top: 0;">
+    <div class="container">
+      <div class="mobile-showcase">
+        <div class="mobile-content">
+          <div class="section-tag">CEBİNİZDEKİ HIZ</div>
+          <h3>📱 Kite Android Mobile Edition</h3>
+          <p>
+            Masaüstündeki güç ve performans şimdi Android cihazınızda. Özel hareket navigasyonları, sesli okuma ve gizli PIN kilidi ile donatıldı.
+          </p>
+          <ul class="mobile-feature-list">
+            <li><span>✓</span> Jest ve Hareketlerle Navigasyon (Gesture Control)</li>
+            <li><span>✓</span> Metinden Sese Okuyucu (Text-to-Speech Reader)</li>
+            <li><span>✓</span> Özel PIN Korumalı Gizli Mod</li>
+            <li><span>✓</span> Ultra Düşük Pil ve Veri Tüketimi</li>
+          </ul>
+          <a href="https://github.com/luqisdev/kitebrowser/releases/download/mobile-latest/Kite.apk" class="btn-primary">
+            📱 Kite.apk İndir (Android)
+          </a>
+        </div>
+
+        <div class="mobile-mockup-phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div style="font-size:0.75rem; font-weight:700; color:var(--primary-cyan); text-align:center; padding:4px 0;">🪁 Kite Mobile</div>
+            <div class="phone-tab">
+              <div style="font-weight:600; color:#fff;">⚡ Mobile Game Boost</div>
+              <div style="font-size:0.7rem; color:var(--text-muted);">RAM tasarrufu aktif.</div>
+            </div>
+            <div class="phone-tab" style="background:rgba(255,255,255,0.03); border-color:rgba(255,255,255,0.06);">
+              <div style="font-weight:600; color:#fff;">🔒 Private PIN Lock</div>
+              <div style="font-size:0.7rem; color:var(--text-muted);">Sekmeleriniz kilitli.</div>
+            </div>
+            <div style="margin-top:auto; background:rgba(0,242,254,0.15); border-radius:10px; padding:10px; text-align:center; font-size:0.75rem; color:var(--primary-cyan);">
+              TTS Reader: Makale Okunuyor 🔊
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download-section" id="download">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">HEMEN DENEYİN</div>
+        <h2 class="section-title">Kite Browser'ı Şimdi İndirin</h2>
+        <p class="section-subtitle">Ücretsiz, açık geliştirilen ve tamamen reklam/sızıntı korumalı modern web tecrübesi.</p>
+      </div>
+
+      <div class="download-cards">
+        <!-- Windows Card -->
+        <div class="dl-card dl-card-featured">
+          <div class="dl-icon">💻</div>
+          <h3 class="dl-platform">Windows Desktop</h3>
+          <div class="dl-filename">Kite-Setup.exe • Windows 10/11 64-bit</div>
+          <a href="https://github.com/luqisdev/kitebrowser/releases/latest" class="btn-primary" style="width: 100%; justify-content: center;">
+            Windows İçin İndir (.exe)
+          </a>
+        </div>
+
+        <!-- Android Card -->
+        <div class="dl-card">
+          <div class="dl-icon">🤖</div>
+          <h3 class="dl-platform">Android Mobile</h3>
+          <div class="dl-filename">Kite.apk • Android 8.0 ve Üzeri</div>
+          <a href="https://github.com/luqisdev/kitebrowser/releases/download/mobile-latest/Kite.apk" class="btn-secondary" style="width: 100%; justify-content: center;">
+            Android APK İndir (.apk)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-icon" style="width:32px; height:32px; font-size:1rem;">🪁</div>
+          <span>Kite Browser</span>
+          <span class="domain-badge">kite.luqis.live</span>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="https://github.com/luqisdev/kitebrowser" target="_blank" rel="noopener">GitHub Repository</a></li>
+          <li><a href="https://github.com/luqisdev" target="_blank" rel="noopener">Geliştirici (luqisdev)</a></li>
+          <li><a href="https://luqis.live" target="_blank" rel="noopener">luqis.live</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Developed with ❤️ by <a href="https://github.com/luqisdev" target="_blank" rel="noopener">luqisdev</a> • Kite Browser &copy; 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
